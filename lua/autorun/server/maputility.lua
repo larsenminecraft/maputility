@@ -60,7 +60,7 @@ end )
 
 hook.Add( "InternalOnRotButtonPressed", "MapUtility:InternalOnRotButtonPressed", function()
 	local ply, button = ACTIVATOR, CALLER
-	-- Ply (can be nil), the button and a bool (true for in et false for out)
+	-- Ply (can be nil), the button
 	hook.Run("PreRotButtonPressed", ply, button)
 end )
 
